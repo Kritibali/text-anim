@@ -1,0 +1,158 @@
+$primarycolor:#fff;
+$font-size:100px;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Product Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+::-webkit-scrollbar{
+    width: 1.4em;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(45deg,#feca57,#ff9f43,#ff6b6b,#ee5253);
+    border-radius:450px;
+}
+::-webkit-scrollbar-track{
+background-color:whitesmoke;
+}
+.gradient-effect{
+    background-color: whitesmoke;
+    height:90vh;
+
+ 
+
+    .gradient-text{
+        color: $primarycolor;
+        font-size: $font-size;
+        font-weight: 7000;
+        display: flex;
+        justify-content: space-around;
+        word-wrap: nowrap;
+        padding-top: 15%;
+        background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 0.1s ease-in-out;
+
+        &:hover{
+            background-image: linear-gradient(to right, #330867 0%, #30cfd0 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition:3s ease-in;
+        -webkit-transition: background-image 2s ease-in;
+        cursor: pointer;
+        }
+    }
+
+}
+.conic-gradient{
+    height:80vh;
+    background-color:#d1ccc0;
+}
+.conic-text{
+    color: $primarycolor;
+    font-size: $font-size;
+    font-weight: 7000;
+    display: flex;
+    justify-content: space-around;
+    word-wrap: nowrap;
+    padding-top: 15%;
+    background: conic-gradient(
+        #db1c19 16.666%, 
+        #f19066 33.333%, 
+        #e66767 40.55%,
+        #D980FA 42.8% ,
+        #686de0 58.8%,
+        #47af99 60.55%,
+        #476098 66.666%,
+        #079992 71.11%, 
+        #476098 83.333%, 
+        #A7489B 83.333%,
+
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 25% 0;
+    -webkit-text-fill-color: transparent;
+    transition: 0.1s ease-in-out;
+
+}
+.text-shadow,.text-shadow2,.Buttons{
+    background-color: rgba(248, 239, 186,0.2);
+    height: 80vh;
+}
+.text,.text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    font-size: 100px;
+    font-weight:bolder;
+    color:white;
+    text-shadow: 2px 2px 10px #e056fd,
+                -2px -2px 10px #e056fd,
+                0 0 10px #e056fd,
+                0 0 10px #e056fd;
+}
+.text-shadow2{
+    background-color: #95afc0;
+}
+.text2{
+    color:white;
+    text-shadow: 
+                -1px -1px 0 #eb4d4b,
+                -2px -2px 0 #ff7979,
+                -3px -3px 0 #f0932b,
+                -4px -4px 0 #f9ca24,
+                -5px -5px 0 #686de0,
+               -7px -7px 0#0652DD
+}
+
+
+::selection{
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.Buttons{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+   text-decoration:none;
+   width:200px;
+   font-size:25px;
+   font-weight:bolder;
+    color:#4b7bec;
+    border:2px solid #4b7bec;
+    padding: 14px 19px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    transform: all 0.5s ease 0s;
+}
+.btn:hover{
+    color:white;
+    transform: all 0.5s ease 0s;
+}
+.btn:after{
+    content: '';
+    background-color:#4b7bec ;
+    position: absolute;
+    height:100%;
+   top:0;
+   left:0;
+    width:0;
+    z-index:-1;
+}
+.btn:hover:after{
+    width:100%;
+}
